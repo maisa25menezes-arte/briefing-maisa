@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#252321">
+<title>Briefing Visual | MAISA Marketing & Design</title>
+<style>
+:root{--ink:#252321;--muted:#77736e;--line:#e8e4df;--paper:#fff;--bg:#f4f2ef;--accent:#9b8068}
+*{box-sizing:border-box}
+body{margin:0;padding:24px 14px;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+main{max-width:720px;margin:0 auto;background:var(--paper);padding:38px 30px;border:1px solid #eeeae5;border-radius:14px;box-shadow:0 12px 35px #00000009}
+.brand{font-size:14px;letter-spacing:5px;font-weight:700}.subbrand{font-size:10px;letter-spacing:2.8px;color:var(--muted);margin-top:6px}
+.rule{height:3px;width:48px;background:var(--accent);margin:22px 0 28px}
+h1{font-size:30px;font-weight:500;margin:0 0 12px}.intro{font-size:14px;line-height:1.75;color:var(--muted);margin:0}
+h2{font-size:12px;letter-spacing:2px;margin:32px 0 4px;color:var(--accent)}
+.field{padding:21px 0;border-bottom:1px solid var(--line)}
+.question{font-size:14px;font-weight:700;line-height:1.5;margin:0 0 12px}
+input[type=text],textarea{width:100%;border:1px solid #dcd7d1;border-radius:7px;padding:13px;font:14px Arial;color:var(--ink);background:#fff;outline:none}
+textarea{min-height:82px;resize:vertical}
+input:focus,textarea:focus{border-color:var(--accent)}
+.options{display:grid;gap:11px}
+.options label{display:flex;align-items:flex-start;gap:10px;font-size:14px;font-weight:400;line-height:1.4}
+input[type=radio]{accent-color:var(--accent);width:17px;height:17px;margin:0;flex:0 0 auto}
+button{width:100%;border:0;border-radius:7px;background:var(--ink);color:white;padding:16px;font-size:14px;font-weight:700;letter-spacing:.5px;margin-top:24px;cursor:pointer}
+button:disabled{opacity:.45}
+.note{text-align:center;font-size:11px;line-height:1.6;color:#999;margin:16px 0 0}
+footer{text-align:center;font-size:10px;letter-spacing:2px;color:#999;margin-top:32px}
+@media(max-width:480px){main{padding:30px 20px}h1{font-size:26px}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="brand">MAISA</div>
+<div class="subbrand">MARKETING &amp; DESIGN</div>
+<div class="rule"></div>
+<h1>Briefing Visual</h1>
+<p class="intro">Vamos alinhar a aparência do seu Instagram? Queremos conhecer suas preferências para desenvolver uma apresentação visual que represente a essência da sua marca.</p>
+</header>
+<form id="briefing">
+<h2>IDENTIFICAÇÃO</h2>
+<div class="field"><p class="question">Nome da marca</p><input type="text" name="Marca" placeholder="Digite o nome da empresa" required></div>
+<h2>SUAS PREFERÊNCIAS VISUAIS</h2>
+<div class="field"><p class="question">01. O que você mais gosta no visual atual do Instagram?</p><textarea name="O que gosta" placeholder="O que gostaria de manter?"></textarea></div>
+<div class="field"><p class="question">02. O que você gostaria de mudar ou melhorar?</p><textarea name="O que mudar" placeholder="Feed, cores, fontes, capas, fotos, organização..."></textarea></div>
+<div class="field"><p class="question">03. Deseja manter as cores atuais da marca?</p><div class="options">
+<label><input type="radio" name="Cores" value="Sim, todas">Sim, todas</label><label><input type="radio" name="Cores" value="Sim, mas com ajustes">Sim, mas com ajustes</label><label><input type="radio" name="Cores" value="Quero nova combinação">Quero uma nova combinação</label><label><input type="radio" name="Cores" value="Ainda não sei">Ainda não sei</label></div></div>
+<div class="field"><p class="question">04. Qual estilo visual mais combina com sua marca?</p><div class="options">
+<label><input type="radio" name="Estilo" value="Minimalista e elegante">Minimalista e elegante</label><label><input type="radio" name="Estilo" value="Moderno e urbano">Moderno e urbano</label><label><input type="radio" name="Estilo" value="Premium e sofisticado">Premium e sofisticado</label><label><input type="radio" name="Estilo" value="Gourmet e rústico">Gourmet e rústico</label><label><input type="radio" name="Estilo" value="Criativo e descontraído">Criativo e descontraído</label><label><input type="radio" name="Estilo" value="Clean e comercial">Clean e comercial</label></div></div>
+<div class="field"><p class="question">05. Como gostaria que o feed fosse organizado?</p><div class="options">
+<label><input type="radio" name="Feed" value="Padronizado e harmônico">Padronizado e harmônico</label><label><input type="radio" name="Feed" value="Fotos em destaque">Fotos em destaque</label><label><input type="radio" name="Feed" value="Fotos e artes alternadas">Fotos e artes alternadas</label><label><input type="radio" name="Feed" value="Espontâneo e natural">Espontâneo e natural</label><label><input type="radio" name="Feed" value="Quero orientação da MAISA">Quero orientação da MAISA</label></div></div>
+<div class="field"><p class="question">06. Quais elementos deseja manter no perfil?</p><textarea name="O que manter" placeholder="Logo, cores, destaques, estilo das fotos..."></textarea></div>
+<div class="field"><p class="question">07. O que gostaria de acrescentar ao Instagram?</p><textarea name="O que acrescentar" placeholder="Capas de destaques, posts institucionais, ofertas, bastidores..."></textarea></div>
+<div class="field"><p class="question">08. Existe algum perfil cuja identidade visual você admira?</p><textarea name="Referências" placeholder="Compartilhe @ ou links de referência"></textarea></div>
+<div class="field"><p class="question">09. Existe algo que você não gostaria de ver no novo visual?</p><textarea name="O que evitar" placeholder="Excesso de informações, muitas cores, artes carregadas..."></textarea></div>
+<div class="field"><p class="question">10. Você está aberto(a) às sugestões criativas da nossa equipe?</p><div class="options">
+<label><input type="radio" name="Abertura" value="Sim, podem propor mudanças">Sim, podem propor mudanças</label><label><input type="radio" name="Abertura" value="Sim, mantendo a essência da marca">Sim, mantendo a essência da marca</label><label><input type="radio" name="Abertura" value="Prefiro mudanças pontuais">Prefiro mudanças pontuais</label></div></div>
+<button type="button" onclick="copiarRespostas()">COPIAR RESPOSTAS</button>
+</form>
+<p class="note">Ao finalizar, toque em “Copiar respostas” e envie o conteúdo para a equipe MAISA pelo WhatsApp.</p>
+<footer>MAISA MARKETING &amp; DESIGN · ESTRATÉGIA E IDENTIDADE</footer>
+</main>
+<script>
+function copiarRespostas(){
+ const form=document.getElementById('briefing');
+ const marca=form.elements['Marca'].value.trim();
+ if(!marca){alert('Por favor, informe o nome da marca.');form.elements['Marca'].focus();return;}
+ const dados=new FormData(form);
+ let texto='MAISA MARKETING & DESIGN\\nBRIEFING VISUAL\\n\\n';
+ for(const [pergunta,resposta] of dados.entries()) texto+=pergunta+': '+(resposta.trim()||'Não respondido')+'\\n\\n';
+ if(navigator.clipboard && navigator.clipboard.writeText){
+  navigator.clipboard.writeText(texto).then(()=>alert('Respostas copiadas! Agora é só enviar para a MAISA.')).catch(()=>fallback(texto));
+ }else fallback(texto);
+}
+function fallback(texto){
+ const area=document.createElement('textarea');area.value=texto;document.body.appendChild(area);area.select();
+ try{document.execCommand('copy');alert('Respostas copiadas! Agora é só enviar para a MAISA.');}
+ catch(e){alert('Não foi possível copiar automaticamente.');}
+ area.remove();
+}
+</script>
+</body>
+</html>
